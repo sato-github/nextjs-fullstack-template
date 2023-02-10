@@ -11,10 +11,8 @@ No need to worry as little as possible about differences in development methods 
 - Typescript v4.9
 - eslint
 - prettier
-
-## Added manually setting files
-
-- .npmrc
-- .nvmrc
-- .prettierrc
-- .prettierignore
+- husky
+- cross-env
+- @commitlint/config-conventional & @commitlint/cli
+- storybook
+- util
