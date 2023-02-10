@@ -6,3 +6,15 @@ No need to worry as little as possible about differences in development methods 
 ## Features
 
 ## Installed packages
+
+- Next.js v13
+- Typescript v4.9
+- eslint
+- prettier
+
+## Added manually setting files
+
+- .npmrc
+- .nvmrc
+- .prettierrc
+- .prettierignore
