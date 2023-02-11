@@ -1,19 +1,14 @@
-export type ButtonType = 'submit' | 'reset' | 'button';
+import { ReactNode } from 'react';
 
-export type GoogleButtonProps =
-  React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    label: string;
-    type?: ButtonType;
-  };
+export interface IGoogleButton
+  extends React.ComponentPropsWithoutRef<'button'> {
+  children: ReactNode;
+}
 
-const GoogleButton = ({
-  type = 'submit',
-  label,
-  ...rest
-}: GoogleButtonProps) => {
+const GoogleButton = ({ children, type, ...rest }: IGoogleButton) => {
   return (
     <button type={type} className="btn-primary" {...rest}>
-      {label}
+      {children}
     </button>
   );
 };

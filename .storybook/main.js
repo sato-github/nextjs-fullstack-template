@@ -7,7 +7,6 @@ module.exports = {
   staticDirs: ['../public'],
   addons: [
     '@storybook/addon-links',
-    '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     'storybook-css-modules-preset',
     {
@@ -22,6 +21,12 @@ module.exports = {
         },
       },
     },
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        docs: false,
+      },
+    }
   ],
   framework: '@storybook/react',
   core: {
@@ -37,6 +42,7 @@ module.exports = {
       ...(config.resolve.plugins || []),
       new TsconfigPathsPlugin()
     ]
+
     return config;
   },
 };

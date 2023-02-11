@@ -18,8 +18,8 @@ const SearchForm = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <div className="space-x-3">
-          <GoogleButton label="Google Search" />
-          <GoogleButton label="I'm Feeling Lucky" />
+          <GoogleButton>Google Search</GoogleButton>
+          <GoogleButton>I&apos;m Feeling Lucky</GoogleButton>
         </div>
       </form>
     </>

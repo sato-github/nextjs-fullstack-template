@@ -1,7 +1,4 @@
-export type ISearchInput = React.InputHTMLAttributes<HTMLInputElement> & {
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
-  value: string | undefined;
-};
+export interface ISearchInput extends React.ComponentPropsWithoutRef<'input'> {}
 
 const SearchInput = ({ value, onChange, ...rest }: ISearchInput) => {
   return (

@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/layouts/sidebar/SidebarLayout.mocks.ts"
+    "src/components/templates/layouts/sidebar/SidebarLayout.mocks.ts"
   ],
   "exclude": ["node_modules"]
 }

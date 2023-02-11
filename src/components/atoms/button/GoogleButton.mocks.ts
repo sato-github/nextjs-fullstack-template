@@ -1,8 +1,7 @@
-import { GoogleButtonProps } from './GoogleButton';
+import { IGoogleButton } from './GoogleButton';
 
-const base: GoogleButtonProps = {
-  label: 'Google Search',
-  type: 'submit',
+const base: IGoogleButton = {
+  children: 'Google Search',
 };
 
 export const mockGoogleButtonProps = {
