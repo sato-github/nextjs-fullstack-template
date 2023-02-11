@@ -11,7 +11,7 @@ const Header = ({ className, ...rest }: IHeader) => {
       className={`w-full flex flex-row justify-between ${className}`}
     >
       <div className="space-x-5 m-5">
-        <CommonLink href="/">About</CommonLink>
+        <CommonLink href="/about">About</CommonLink>
         <CommonLink href="/">Store</CommonLink>
       </div>
       <div className="space-x-5 m-5">

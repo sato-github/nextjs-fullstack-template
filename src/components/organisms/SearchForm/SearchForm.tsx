@@ -1,16 +1,19 @@
 import GoogleButton from '@components/atoms/button/GoogleButton';
 import SearchInput from '@components/atoms/Input/SearchInput';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 
 const SearchForm = () => {
+  const router = useRouter();
   const [searchTerm, setSearchTerm] = useState<string>();
+
   return (
     <>
       <form
         className="flex flex-col items-center gap-y-5"
         onSubmit={(e) => {
           e.preventDefault();
-          alert(searchTerm);
+          router.push(`/results?search=${searchTerm}`);
         }}
       >
         <SearchInput

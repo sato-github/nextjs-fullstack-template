@@ -1,6 +1,5 @@
 import PrimaryLayout from '@components/templates/layouts/primary/PrimaryLayout';
-import SidebarLayout from '@components/templates/layouts/sidebar/SidebarLayout';
-import { NextPageWithLayout } from './page';
+import { NextPageWithLayout } from '@types';
 
 const About: NextPageWithLayout = () => {
   return (
@@ -23,12 +22,6 @@ const About: NextPageWithLayout = () => {
         we need to prevent the React component tree from being discarded between
         page transitions.
       </p>
-      <h3>Try It Out</h3>
-      <p>
-        To visualize this, try tying in the search input in the{' '}
-        <code>Sidebar</code> and then changing routes. You&apos;ll notice the
-        input state is persisted.
-      </p>
     </section>
   );
 };
@@ -36,10 +29,5 @@ const About: NextPageWithLayout = () => {
 export default About;
 
 About.getLayout = (page) => {
-  return (
-    <PrimaryLayout>
-      <SidebarLayout />
-      {page}
-    </PrimaryLayout>
-  );
+  return <PrimaryLayout>{page}</PrimaryLayout>;
 };
