@@ -1,6 +1,6 @@
-import CommonButton from '@components/atoms/button/CommonButton';
 import CommonLink from '@components/atoms/link/CommonLink';
 import React from 'react';
+import AuthButton from '../AuthButton/AuthButton';
 
 export interface IHeader extends React.ComponentPropsWithoutRef<'header'> {}
 
@@ -21,7 +21,7 @@ const Header = ({ className, ...rest }: IHeader) => {
         <CommonLink href="/" className="hidden sm:inline">
           Images
         </CommonLink>
-        <CommonButton type="button">Sign In</CommonButton>
+        <AuthButton />
       </div>
     </header>
   );
