@@ -4,7 +4,7 @@ import { useContext } from 'react';
 
 export interface IAuthButton extends React.ComponentPropsWithoutRef<'button'> {}
 
-const AuthButton = ({ className, ...rest }: IAuthButton) => {
+const AuthButton = ({ ...rest }: IAuthButton) => {
   const { authenticated, login, logOut } = useContext(AuthContext);
 
   return (

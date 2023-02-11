@@ -1,6 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import AuthButton, { IAuthButton } from './AuthButton';
-import { mockAuthButtonProps } from './AuthButton.mocks';
+import AuthButton from './AuthButton';
 
 export default {
   title: 'organisms/AuthButton',
