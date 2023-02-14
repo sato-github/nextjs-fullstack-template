@@ -1,4 +1,4 @@
-import PrimaryLayout from '@components/templates/layouts/primary/PrimaryLayout';
+import { PrimaryLayout } from '@components/templates';
 import { NextPageWithLayout } from '@types';
 
 const About: NextPageWithLayout = () => {

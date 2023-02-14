@@ -1,9 +1,9 @@
-import PrimaryLayout from '@components/templates/layouts/primary/PrimaryLayout';
-import SearchForm from '@components/organisms/SearchForm/SearchForm';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { NextPageWithLayout } from '@types';
+import { SearchForm } from '@components/organisms';
+import { PrimaryLayout } from '@components/templates';
 
 const Home: NextPageWithLayout = () => {
   const { locale } = useRouter();

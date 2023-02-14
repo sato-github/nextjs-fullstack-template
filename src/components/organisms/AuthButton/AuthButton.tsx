@@ -1,10 +1,10 @@
-import CommonButton from '@components/atoms/button/CommonButton';
+import { CommonButton } from '@components/atoms';
 import AuthContext from '@context/auth/AuthContext';
 import { useContext } from 'react';
 
-export interface IAuthButton extends React.ComponentPropsWithoutRef<'button'> {}
+export type AuthButtonProps = React.ComponentPropsWithoutRef<'button'> & {};
 
-const AuthButton = ({ ...rest }: IAuthButton) => {
+const AuthButton = ({ ...rest }: AuthButtonProps) => {
   const { authenticated, login, logOut } = useContext(AuthContext);
 
   return (

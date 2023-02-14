@@ -1,6 +1,7 @@
 import '../src/styles/globals.css';
 import * as NextImage from 'next/image';
 import { AuthProvider } from '../src/context/auth/AuthContext';
+import * as nextRouter from "next/router";
 
 const BREAKPOINTS_INT = {
   xs: 375,
@@ -41,6 +42,14 @@ export const decorators = [
     </AuthProvider>
   ),
 ];
+
+nextRouter.useRouter = () => ({
+  route: "",
+  pathname: "",
+  query: { query: "" },
+  asPath: "",
+  basePath: "",
+});
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

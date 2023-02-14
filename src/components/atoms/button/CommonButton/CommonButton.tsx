@@ -1,11 +1,10 @@
 import { ReactNode } from 'react';
 
-export interface ICommonButton
-  extends React.ComponentPropsWithoutRef<'button'> {
+export type CommonButtonProps = React.ComponentPropsWithoutRef<'button'> & {
   children: ReactNode;
-}
+};
 
-const CommonButton = ({ children, type, ...rest }: ICommonButton) => {
+const CommonButton = ({ children, type, ...rest }: CommonButtonProps) => {
   return (
     <button
       type={type}

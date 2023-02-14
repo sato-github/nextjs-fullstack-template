@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './SidebarLayout.module.css';
 
-export interface ISidebarLayout {}
+export type SidebarLayoutProps = {};
 
 const SidebarLayout = () => {
   return (

@@ -1,22 +1,22 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import SidebarLayout, { ISidebarLayout } from './SidebarLayout';
-import { mockSidebarLayoutProps } from './SidebarLayout.mocks';
+import PrimaryLayout, { PrimaryLayoutProps } from './PrimaryLayout';
+import { mockPrimaryLayoutProps } from './PrimaryLayout.mocks';
 
 export default {
-  title: 'templates/layouts/SidebarLayout',
-  component: SidebarLayout,
+  title: 'templates/layouts/PrimaryLayout',
+  component: PrimaryLayout,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-} as ComponentMeta<typeof SidebarLayout>;
+} as ComponentMeta<typeof PrimaryLayout>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof SidebarLayout> = (_args) => (
-  <SidebarLayout />
+const Template: ComponentStory<typeof PrimaryLayout> = (args) => (
+  <PrimaryLayout {...args} />
 );
 
 export const Base = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 
 Base.args = {
-  ...mockSidebarLayoutProps.base,
-} as ISidebarLayout;
+  ...mockPrimaryLayoutProps.base,
+} as PrimaryLayoutProps;

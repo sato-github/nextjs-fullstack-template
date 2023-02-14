@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import GoogleButton, { IGoogleButton } from './GoogleButton';
+import GoogleButton, { GoogleButtonProps } from './GoogleButton';
 import { mockGoogleButtonProps } from './GoogleButton.mocks';
 
 export default {
@@ -19,4 +19,4 @@ export const Base = Template.bind({});
 
 Base.args = {
   ...mockGoogleButtonProps.base,
-} as IGoogleButton;
+} as GoogleButtonProps;

@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import CommonLink, { ICommonLink } from './CommonLink';
+import CommonLink, { CommonLinkProps } from './CommonLink';
 
 export default {
   title: 'atoms/link/CommonLink',
@@ -17,4 +17,4 @@ export const Base = Template.bind({});
 Base.args = {
   href: '/',
   className: 'hidden sm:inline',
-} as ICommonLink;
+} as CommonLinkProps;

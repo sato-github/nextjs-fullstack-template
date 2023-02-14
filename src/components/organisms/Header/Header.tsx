@@ -1,10 +1,10 @@
-import CommonLink from '@components/atoms/link/CommonLink';
 import React from 'react';
+import { CommonLink } from '@components/atoms';
 import AuthButton from '../AuthButton/AuthButton';
 
-export interface IHeader extends React.ComponentPropsWithoutRef<'header'> {}
+export type HeaderProps = React.ComponentPropsWithoutRef<'header'> & {};
 
-const Header = ({ className, ...rest }: IHeader) => {
+const Header = ({ className, ...rest }: HeaderProps) => {
   return (
     <header
       {...rest}

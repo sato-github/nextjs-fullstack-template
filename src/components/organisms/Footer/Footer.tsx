@@ -1,6 +1,6 @@
-export interface IFooter extends React.ComponentPropsWithoutRef<'footer'> {}
+export type FooterProps = React.ComponentPropsWithoutRef<'footer'> & {};
 
-const Footer = ({ className, ...footerProps }: IFooter) => {
+const Footer = ({ className, ...footerProps }: FooterProps) => {
   return (
     <footer
       {...footerProps}

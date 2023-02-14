@@ -1,11 +1,11 @@
-import GoogleButton from '@components/atoms/button/GoogleButton';
-import SearchInput from '@components/atoms/Input/SearchInput';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import { TextInput } from '@components/atoms';
+import { GoogleButton } from '@components/atoms';
 
 const SearchForm = () => {
   const router = useRouter();
-  const [searchTerm, setSearchTerm] = useState<string>();
+  const [searchTerm, setSearchTerm] = useState<string>('');
 
   return (
     <>
@@ -16,7 +16,7 @@ const SearchForm = () => {
           router.push(`/results?search=${searchTerm}`);
         }}
       >
-        <SearchInput
+        <TextInput
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />

@@ -1,15 +1,15 @@
 import styles from './CatCard.module.css';
 import Image from 'next/image';
 
-export interface ICatCard {
+export type CatCardProps = {
   tag: string;
   title: string;
   body: string;
   author: string;
   time: string;
-}
+};
 
-const CatCard = ({ tag, title, body, author, time }: ICatCard) => {
+const CatCard = ({ tag, title, body, author, time }: CatCardProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>

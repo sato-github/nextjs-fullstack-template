@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import SearchResult, { ISearchResult } from './SearchResult';
+import SearchResult, { SearchResultProps } from './SearchResult';
 import { mockSearchResultProps } from './SearchResult.mocks';
 
 export default {
@@ -17,4 +17,4 @@ const Template: ComponentStory<typeof SearchResult> = (args) => (
 export const Base = Template.bind({});
 Base.args = {
   ...mockSearchResultProps.base,
-} as ISearchResult;
+} as SearchResultProps;

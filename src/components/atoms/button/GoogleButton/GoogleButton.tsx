@@ -1,11 +1,10 @@
 import { ReactNode } from 'react';
 
-export interface IGoogleButton
-  extends React.ComponentPropsWithoutRef<'button'> {
+export type GoogleButtonProps = React.ComponentPropsWithoutRef<'button'> & {
   children: ReactNode;
-}
+};
 
-const GoogleButton = ({ children, type, ...rest }: IGoogleButton) => {
+const GoogleButton = ({ children, type, ...rest }: GoogleButtonProps) => {
   return (
     <button type={type} className="btn-primary" {...rest}>
       {children}

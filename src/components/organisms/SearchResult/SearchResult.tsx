@@ -1,7 +1,8 @@
 import { ISearchData } from '@types';
 import Link from 'next/link';
 
-export type ISearchResult = React.ComponentPropsWithoutRef<'div'> & ISearchData;
+export type SearchResultProps = React.ComponentPropsWithoutRef<'div'> &
+  ISearchData;
 
 const SearchResult = ({
   url,
@@ -9,7 +10,7 @@ const SearchResult = ({
   text,
   className,
   ...rest
-}: ISearchResult) => {
+}: SearchResultProps) => {
   return (
     <div
       {...rest}

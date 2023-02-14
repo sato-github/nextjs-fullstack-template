@@ -7,6 +7,12 @@ module.exports = {
   staticDirs: ['../public'],
   addons: [
     '@storybook/addon-links',
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        docs: false,
+      },
+    },
     '@storybook/addon-interactions',
     'storybook-css-modules-preset',
     {
@@ -21,12 +27,6 @@ module.exports = {
         },
       },
     },
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        docs: false,
-      },
-    }
   ],
   framework: '@storybook/react',
   core: {

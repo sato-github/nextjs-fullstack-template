@@ -1,17 +1,16 @@
-import Footer from '@components/organisms/Footer/Footer';
-import Header from '@components/organisms/Header/Header';
+import { Footer, Header } from '@components/organisms';
 import Head from 'next/head';
 
-export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {
+export type PrimaryLayoutProps = React.ComponentPropsWithoutRef<'div'> & {
   justify?: 'items-center' | 'items-start';
   children: React.ReactNode;
-}
+};
 
 const PrimaryLayout = ({
   children,
   justify = 'items-center',
   ...rest
-}: IPrimaryLayout) => {
+}: PrimaryLayoutProps) => {
   return (
     <>
       <Head>

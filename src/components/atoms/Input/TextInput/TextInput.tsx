@@ -1,6 +1,6 @@
-export interface ISearchInput extends React.ComponentPropsWithoutRef<'input'> {}
+export type SearchInputProps = React.ComponentPropsWithoutRef<'input'> & {};
 
-const SearchInput = ({ value, onChange, ...rest }: ISearchInput) => {
+const TextInput = ({ value, onChange, ...rest }: SearchInputProps) => {
   return (
     <input
       type="text"
@@ -12,4 +12,4 @@ const SearchInput = ({ value, onChange, ...rest }: ISearchInput) => {
   );
 };
 
-export default SearchInput;
+export default TextInput;

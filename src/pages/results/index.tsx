@@ -1,8 +1,8 @@
 import { GetServerSideProps } from 'next';
 import { ISearchData, NextPageWithLayout } from '@types';
 import { IApiSearchResponseData } from '@pages/api/search';
-import SearchResult from '@components/organisms/SearchResult/SearchResult';
-import PrimaryLayout from '@components/templates/layouts/primary/PrimaryLayout';
+import { SearchResult } from '@components/organisms';
+import { PrimaryLayout } from '@components/templates';
 
 export interface IResults {
   searchResults: ISearchData[];
